@@ -17,8 +17,8 @@
 1- [Abundance_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/Abundance_Results): This folder contains the abundance results of the SOVAP pipeline for all datasets  
   
 2- [RdRp_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/RdRp_Results): This folder contains the RdRp Sequences from all datasets  
-- 2.1- [RdRp_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/RdRp_Results/RdRp-Scan): This folder contains the RdRp Analysis Results with RdRp-Scan approach: alignments and Newick files
-- 2.2- [RdRp_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/RdRp_Results/WSH): This folder contains the RdRp Analysis Results with WSH approach: alignments and Newick files  
+- 2.1- [RdRp-Scan_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/RdRp_Results/RdRp-Scan): This folder contains the RdRp Analysis Results with RdRp-Scan approach: alignments and Newick files
+- 2.2- [WSH_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/RdRp_Results/WSH): This folder contains the RdRp Analysis Results with WSH approach: alignments and Newick files  
 
 3- [Plasmid_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/geNomad_Plasmid): This folder contains the plasmid results of the geNomad tool for all datasets  (final.contigs_plasmid_summary.tsv)
   
