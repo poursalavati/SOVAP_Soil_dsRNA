@@ -91,7 +91,7 @@ print(result_df)
 
 ### If you have replicates for each sample or related samples that you want to group together, you can use the rest of the code to create a violin plot.
 ## Make sure your dataframe have this header for instance:
-## Level	CCC_dsRNA1	CCC_dsRNA2	CCC_dsRNA3	CCC_dsRNA4	RPT_dsRNA1	RPT_dsRNA2	RPT_dsRNA3	RPT_dsRNA4	VANA1	VANA2	VANA3	VANA4
+## Level,CCC_dsRNA1,CCC_dsRNA2,CCC_dsRNA3,CCC_dsRNA4,RPT_dsRNA1,RPT_dsRNA2,RPT_dsRNA3,RPT_dsRNA4,VANA1,VANA2,VANA3,VANA4
 
 # Load required libraries
 library(ggplot2)
