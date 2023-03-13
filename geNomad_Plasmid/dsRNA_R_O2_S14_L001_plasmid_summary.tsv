@@ -1,0 +1,25 @@
+seq_name	length	topology	n_genes	genetic_code	plasmid_score	fdr	n_hallmarks	marker_enrichment	conjugation_genes	amr_genes
+k127_1787	294	No terminal repeats	1	11	0.6204	NA	0	0.5441	NA	NA
+k127_1675	288	No terminal repeats	1	11	0.5792	NA	0	0.0000	NA	NA
+k127_1906	281	No terminal repeats	1	11	0.5552	NA	0	0.0000	NA	NA
+k127_3722	376	No terminal repeats	1	11	0.5511	NA	0	0.9450	NA	NF012171
+k127_13	300	No terminal repeats	1	11	0.5337	NA	0	0.0000	NA	NA
+k127_862	301	No terminal repeats	2	11	0.4981	NA	0	0.0000	NA	NA
+k127_2359	437	No terminal repeats	1	11	0.4917	NA	0	0.0000	NA	NA
+k127_3553	332	No terminal repeats	1	11	0.4744	NA	0	0.0000	NA	NA
+k127_2638	346	No terminal repeats	1	11	0.4580	NA	0	0.0000	NA	NA
+k127_227	350	No terminal repeats	2	11	0.4553	NA	0	0.1520	NA	NA
+k127_3523	290	No terminal repeats	1	11	0.4530	NA	0	0.3649	NA	NA
+k127_2093	518	No terminal repeats	2	11	0.4300	NA	0	0.0000	NA	NA
+k127_3749	701	No terminal repeats	1	11	0.4258	NA	0	0.0000	NA	NA
+k127_2739	297	No terminal repeats	1	11	0.4253	NA	0	0.0000	NA	NA
+k127_487	301	No terminal repeats	1	11	0.4047	NA	0	0.0000	NA	NA
+k127_4177	295	No terminal repeats	1	11	0.4031	NA	0	0.0000	NA	NA
+k127_990	233	No terminal repeats	2	11	0.3917	NA	0	0.0000	NA	NA
+k127_1440	298	No terminal repeats	1	11	0.3778	NA	0	0.0000	NA	NA
+k127_4053	300	No terminal repeats	2	11	0.3739	NA	0	0.0000	NA	NA
+k127_1986	358	No terminal repeats	1	11	0.3693	NA	0	0.0000	NA	NA
+k127_4093	924	No terminal repeats	3	11	0.3664	NA	0	0.0000	NA	NA
+k127_3356	491	No terminal repeats	1	11	0.3657	NA	0	0.0000	NA	NA
+k127_1503	289	No terminal repeats	1	4	0.3649	NA	0	0.0000	NA	NA
+k127_1347	297	No terminal repeats	0	11	0.3506	NA	0	0.0000	NA	NA
