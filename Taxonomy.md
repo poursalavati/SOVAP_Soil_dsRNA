@@ -23,4 +23,13 @@ The script loops through each subdirectory in the root folder and performs the f
 - Sort the merged column using `sort` command.
 - Use the `join` command to join the sorted merged column with IMGVR_all_Sequence_information.tsv file. The -t option specifies the tab as the delimiter, and the `-a1` option tells join to print unpairable lines from the first file. The `-` character specifies to use standard input as the first file for `join`.
 - Write the output to a file named after the subdirectory and with the extension .taxo.
-- The resulting output files will contain taxonomic information for each sequence in the subdirectory's output.diamond.tsv file.
+- The resulting output files will contain taxonomic information for each sequence in the subdirectory's output.diamond.tsv file.  
+
+**Due to the large size of IMGVR_all_Sequence_information.tsv file, this step is provided as an optional side script. However, it is recommended to perform this step for reproducing graphs in the manuscript and analyzing data in R for taxonomy, diversity indices, and etc.**  
+
+---------------------
+IMGVR_all_Sequence_information.tsv:
+a table listing the characteristics of each viral sequence such as its origin, affiliation, and predicted host (tsv format).  
+
+More information: 
+https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html
