@@ -16,11 +16,6 @@
 # Load required packages
 library(tidyverse)
 library(data.table)
-library(reshape2)
-library(dplyr)
-library(purrr)
-library(ggplot2)
-
 
 # Set the folder path
 folder_path <- "path/to/taxonomy/and/abundance/data"
