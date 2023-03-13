@@ -1,4 +1,5 @@
-#This R code is used to graph taxonomy data. The code sets the folder path where the taxonomy and abundance data are stored. 
+#This R code is used to manipulate and prepare necessary data and tables to plot taxonomy data in stacked bar charts and heatmaps. 
+#The code sets the folder path where the taxonomy and abundance data are stored. 
 #The list.files function is used to get a list of all file names with the extensions ".taxo" and ".tsv" in the specified folder.
 #The code then loops over each pair of files and reads them in using read.table function.
 #The first file contains the abundance data in TPM format, while the second file contains the taxonomy information for each ID. 
