@@ -22,7 +22,7 @@
 
 3- [Plasmid_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/geNomad_Plasmid): This folder contains the plasmid results of the geNomad tool for all datasets  (final.contigs_plasmid_summary.tsv)
   
-4- [Virus_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/geNomad_Virus): This folder contains the plasmid results of the geNomad tool for all datasets  (final.contigs_virus_summary.tsv)
+4- [Virus_dir](https://github.com/poursalavati/SOVAP_Soil_dsRNA/tree/main/geNomad_Virus): This folder contains the virus results of the geNomad tool for all datasets  (final.contigs_virus_summary.tsv)
 
 #### If you have any other questions or concerns related to the code or analysis, please create a new issue on Github.
 #### If you find this code helpful, please cite:  
