@@ -9,7 +9,7 @@
   
 3- [Plotting Stacked Bar Charts and HeatMaps](https://github.com/poursalavati/SOVAP_Soil_dsRNA/blob/main/StackedBarcharts_HeatMaps.R): Creates two functions that generate stacked bar chart and heatmaps for each taxonomic level  
   
-4- [Diversity Indices Calculation](https://github.com/poursalavati/SOVAP_Soil_dsRNA/blob/main/Diversity_Indices.R): Calculates richness and diversity indices (shannon and simpson) for each taxonomic level and Violin Plot   
+4- [Diversity Indices Calculation](https://github.com/poursalavati/SOVAP_Soil_dsRNA/blob/main/Diversity_Indices.R): Calculates richness and diversity indices (Shannon and Simpson) for each taxonomic level and Violin Plot   
   
 5- [Beta diversity and PCoA](https://github.com/poursalavati/SOVAP_Soil_dsRNA/blob/main/Beta_and_PCoA.R): Calculate Bray-Curtis dissimilarity matrix and PCoA plot  
   
