@@ -29,7 +29,7 @@ for (i in seq_along(file_names)) {
   mydata <- read.table(gsub("\\.tsv$", ".taxo", file_names[i]), header = FALSE, sep = "\t", colClasses = "character", na.strings = "NA", fill = TRUE)
   
   # Manipulate the data
-  colnames(tpm) <- c("ID", "Count", "CPM", "TPM", "FPKM", "Len")
+  colnames(tpm) <- c("ID", "Count", "CPM", "TPM", "FPKM", "Length")
   mydata <- mydata[, c(1, 2, 16)]
   newcols <- tstrsplit(as.character(mydata[, 3]), ";", fixed = TRUE)
   mydata <- cbind(mydata[, c(1, 2)], newcols)
