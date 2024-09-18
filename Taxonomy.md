@@ -2,7 +2,7 @@
 
 **Note: It should be run in the root folder where the SOVAP pipeline is executed.**
 
-This is a shell script that loops over all directories (indicated by */) in the current directory, extracts information from a file called output.diamond.tsv, and joins it with information from a file called IMGVR_all_Sequence_information.tsv. 
+This is a shell command that loops over all directories (indicated by */) in the current directory, extracts information from a file called output.diamond.tsv, and joins it with information from a file called IMGVR_all_Sequence_information.tsv. 
 
 ```
 for folder in */; do \
