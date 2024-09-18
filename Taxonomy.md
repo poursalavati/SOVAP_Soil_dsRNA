@@ -8,10 +8,12 @@ This is a shell script that loops over all directories (indicated by */) in the 
 for folder in */; do \
     parent_dir=${folder%/}; \
     cut -f1,2 ${folder%}6_Diamond-Taxonomy/output.diamond.tsv | cut -d "|" -f1 | \
-        paste <(cut -f2) <(cut -f1) | \
+        awk '{print $2 "\t" $1}' | \
         sort -k1,1 | \
-        join -t $'\t' -a1 - /path/to/IMGVR_all_Sequence_information.tsv > ${folder%}6_Diamond-Taxonomy/$parent_dir.taxo ; \
-done
+        join -a1 -t $'\t' - /path/to/IMGVR_all_Sequence_information.tsv > \
+        ${folder%}6_Diamond-Taxonomy/$parent_dir.taxo ; \
+Done
+
 ```
 
 _Details:_
