@@ -10,7 +10,7 @@ for folder in */; do \
     cut -f1,2 ${folder}6_Diamond-Taxonomy/output.diamond.tsv | cut -d "|" -f1 | \
         awk '{print $2 "\t" $1}' | \
         sort -k1,1 | \
-        join -a1 -t $'\t' - /path/to/IMGVR_all_Sequence_information.tsv > \
+        join -a1 -t $'\t' - /path/to/IMGVR_all_Sequence_information_sorted.tsv > \
         ${folder}6_Diamond-Taxonomy/$parent_dir.taxo; \
 done
 ```
@@ -26,6 +26,30 @@ done
 3. **Save the output** to a file called `foldername.taxo` within the `6_Diamond-Taxonomy/` subdirectory of each folder.
 
 The resulting `.taxo` file will contain taxonomic details for each sequence in the corresponding `output.diamond.tsv` file, ready for downstream analysis.
+
+  
+**Important**: 
+- **Ensure the `IMGVR_all_Sequence_information.tsv` file is pre-sorted by the first column** (sequence ID) for the join operation to work correctly. Using an unsorted file may result in missing matches or errors. If the file is not sorted, you can pre-sort it as follows:
+
+```bash
+sort -k1,1 /path/to/IMGVR_all_Sequence_information.tsv -o /path/to/IMGVR_all_Sequence_information_sorted.tsv
+```
+
+Alternatively, **if the file is not pre-sorted and sorting it is not feasible due to its size**, you can sort the file during execution using the following command. However, this is **not recommended** when working with many directories, as it significantly increases runtime:
+
+```bash
+for folder in */; do \
+    parent_dir=${folder%/}; \
+    cut -f1,2 ${folder}6_Diamond-Taxonomy/output.diamond.tsv | cut -d "|" -f1 | \
+        awk '{print $2 "\t" $1}' | \
+        sort -k1,1 | \
+        join -a1 -t $'\t' - <(sort -k1,1 /path/to/IMGVR_all_Sequence_information.tsv) > \
+        ${folder}6_Diamond-Taxonomy/$parent_dir.taxo; \
+done
+```
+
+**Explanation**: 
+- In this command, the `IMGVR_all_Sequence_information.tsv` file is sorted on-the-fly during the join operation. This adds overhead, particularly when processing many directories, as the file is sorted every time the command is run.
 
 **Due to the large size of IMGVR_all_Sequence_information.tsv file, this step is provided as an optional side script. However, it is recommended to perform this step for reproducing graphs in the manuscript and analyzing data in R for taxonomy, diversity indices, and etc.**  
 
